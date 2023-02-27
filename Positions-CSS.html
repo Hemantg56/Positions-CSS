@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions-CSS</title>
+    <style>
+        .static {
+            background: lightblue;
+            color: red;
+            font-size: 2rem;
+            font-family: monospace;
+            position: static;
+            top: 100px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        
+        .fixed {
+            border: 3px solid;
+            height: 50px;
+            width: 100%;
+            background: lightblue;
+            color: red;
+            font-size: 3rem;
+            font-family: 'Courier New', Courier, monospace;
+            position: fixed;
+            top: 0px;
+            /* bottom: 0; */
+            /* left: 0; */
+            /* right: 0; */
+        }
+        
+        .sticky {
+            background: lightblue;
+            color: red;
+            font-size: 2rem;
+            font-family: monospace;
+            position: sticky;
+            top: 80px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS positions:
+
+    1. static (default)
+    2. fixed
+    3. sticky
+    4. absolute
+    5. relative -->
+
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="static">static</div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="fixed">fixed</div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="sticky">sticky</div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+    <div class="x">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis laborum ad explicabo magni laboriosam ullam, soluta eos, itaque perferendis ipsa cupiditate quia consectetur nisi rem dolorum culpa corporis totam?
+    </div>
+</body>
+
+</html>
